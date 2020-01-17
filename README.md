@@ -16,7 +16,7 @@ Elon: skrivit i readme samt börjat på flödesdiagramet.
 
 Gjort 2020-01-17
 
-Elon gjort klart flowcharten.
+Elon: gjort klart flowcharten.
 
 
 
