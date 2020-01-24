@@ -12,23 +12,23 @@ public class Main {
         System.out.println(ord);
         // Ord input system.
 
-        int ordlängd = 0;
+        int ordlangd = 0;
 
 
         for( int i = 0; i < ord.length( ); i++ )
         {
-                ordlängd++;
+                ordlangd++;
         }
-        System.out.println(ordlängd);
+        System.out.println(ordlangd);
         // Räknar hur många bokstäver som finns i ett ord.
 
-        char[] bokstäver = new char[ord.length()];
+        char[] bokstaver = new char[ord.length()];
         for( int i = 0; i < ord.length( ); i++ )
         {
-            bokstäver[i] = ord.charAt(i);
+            bokstaver[i] = ord.charAt(i);
         }
 
-        System.out.println(bokstäver);
+        System.out.println(bokstaver);
 
 
     }
