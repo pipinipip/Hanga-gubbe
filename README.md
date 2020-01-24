@@ -18,6 +18,10 @@ Gjort 2020-01-17
 
 Elon: gjort klart flowcharten.
 Nästa gång: Göra en sak som kan räkna mängden bokstäver i ett ord.
+
+gjort 2020-01-24 
+
+Elon gjort ett system för att räkna mängden bokstäver samt att he alla bokstäver i en array
  
 
 
