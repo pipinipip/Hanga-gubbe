@@ -8,12 +8,21 @@ public class Main {
 
      // String mot = JOptionPane.showInputDialog("skriv dator eller spelare för att välja vad du vill spela mot");
 
-        final String ord = JOptionPane.showInputDialog("skriv ett ord");
+        String ord = JOptionPane.showInputDialog("skriv ett ord");
         System.out.println(ord);
         // Ord input system.
 
-        int ordlangd = 0;
+        ord = ord.toUpperCase();
+// gör så att alla bokstäver blir uppercase
 
+        String ordspook = ord.replaceAll("[A-Z]", "_ ");
+        // Skapar strängen ordspook som har lika många _ som bokstäver i ordet.
+
+        System.out.println(ordspook);
+
+        int ordlangd = 0;
+        int maxfel = 11 ;
+        int fel = 0;
 
         for( int i = 0; i < ord.length( ); i++ )
         {
@@ -22,13 +31,13 @@ public class Main {
         System.out.println(ordlangd);
         // Räknar hur många bokstäver som finns i ett ord.
 
-        char[] bokstaver = new char[ord.length()];
+        /*char[] bokstaver = new char[ord.length()];
         for( int i = 0; i < ord.length( ); i++ )
         {
             bokstaver[i] = ord.charAt(i);
         }
-
-        System.out.println(bokstaver);
+*/
+    //    System.out.println(bokstaver);
 
 
     }
