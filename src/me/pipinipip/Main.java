@@ -24,6 +24,7 @@ public class Main {
         int maxfel = 11 ;
         int fel = 0;
         String gissningar = "";
+        boolean gissningiord;
 
         for( int i = 0; i < ord.length( ); i++ )
         {
@@ -45,25 +46,35 @@ while (fel < maxfel && ordspook.contains("_"))
     // gör om bokstaven man gissade till en stor bokstav.
     gissningar += gissning;
     // håller reda på vika bokstäver som har blivit gissade.
-    System.out.println(gissningar);
+    System.out.println("du har gissat på " + gissningar);
+    char cGuess = gissning.charAt(0);
 
+    gissningiord = ord.contains(gissning);
+    if (gissningiord == true){
+        System.out.println(gissning + " finns i ordet");
+    for (int position = 0; position < ord.length(); position++)
+    {
+        if (cGuess == (ord.charAt(position))){
+            ordspook = ordspook.replaceAll("_ ", "_");
+            String spookord2;
+            spookord2 = ordspook.substring(0, position) + gissning + ordspook.substring(position + 1);
+            spookord2 = spookord2.replaceAll("_", "_ ");
+            ordspook = spookord2;
+        }
+    }
+} else {
+System.out.println(gissning + "finns inte i ordet");
+fel++;
+}
+}
+if (fel == maxfel) {
+System.out.println("du förlorde");
 
-
-
+} else {
+    System.out.println("du vann :)");
 }
 
-
-
-
-
-
-
-
-
-
-
-
-    }
+}
 
 }
 
