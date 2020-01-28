@@ -23,6 +23,7 @@ public class Main {
         int ordlangd = 0;
         int maxfel = 11 ;
         int fel = 0;
+        String gissningar = "";
 
         for( int i = 0; i < ord.length( ); i++ )
         {
@@ -31,13 +32,35 @@ public class Main {
         System.out.println(ordlangd);
         // Räknar hur många bokstäver som finns i ett ord.
 
-        /*char[] bokstaver = new char[ord.length()];
-        for( int i = 0; i < ord.length( ); i++ )
-        {
-            bokstaver[i] = ord.charAt(i);
-        }
-*/
-    //    System.out.println(bokstaver);
+
+
+while (fel < maxfel && ordspook.contains("_"))
+{
+    System.out.println(ordspook);
+    System.out.println("Du har " + fel + " fel utav " + maxfel);
+
+
+    String gissning = JOptionPane.showInputDialog("gissa en bokstav");
+    gissning = gissning.toUpperCase();
+    // gör om bokstaven man gissade till en stor bokstav.
+    gissningar += gissning;
+    // håller reda på vika bokstäver som har blivit gissade.
+    System.out.println(gissningar);
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
 
 
     }
